@@ -1,0 +1,4 @@
+/.idea
+/docker/dev/nginx/logs/
+/vendor/
+/web/sites/default/files/
