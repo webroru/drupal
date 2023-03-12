@@ -93,6 +93,7 @@
         }
     },
     "require-dev": {
-        "drush/drush": "^11.5"
+        "drush/drush": "^11.5",
+        "squizlabs/php_codesniffer": "^3.7"
     }
 }
