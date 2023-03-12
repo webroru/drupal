@@ -1,0 +1,18 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\web\Event\EntityPresaveEvent;
+
+/**
+ * Implements hook_entity_update().
+ */
+function web_entity_presave(EntityInterface $entity): void {
+    $event = new EntityPresaveEvent($entity);
+    /** @var ContainerAwareEventDispatcher $dispatcher */
+    $dispatcher = \Drupal::service('event_dispatcher');
+    $dispatcher->dispatch($event, EntityPresaveEvent::EVENT_NAME);
+}
