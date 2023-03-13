@@ -1,5 +1,8 @@
 services:
+  joshtronic\LoremIpsum: ~
+  Drupal\web\Service\Ipsum:
+    arguments: ['@joshtronic\LoremIpsum']
   Drupal\web\EventSubscriber\WebSubscriber:
-    arguments: ['@messenger']
+    arguments: ['@Drupal\web\Service\Ipsum']
     tags:
       - { name: event_subscriber }

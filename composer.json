@@ -12,10 +12,15 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "path",
+            "url": "./web/modules/web"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
+        "dhl/web": "@dev",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0"

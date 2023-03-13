@@ -1,0 +1,10 @@
+{
+    "name": "dhl/web",
+    "description": "Dummy module",
+    "license": "proprietary",
+    "type": "drupal-custom-module",
+    "minimum-stability": "stable",
+    "require": {
+        "joshtronic/php-loremipsum": "^2.1"
+    }
+}

@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace Drupal\web\EventSubscriber;
 
-use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\node\Entity\Node;
 use Drupal\web\Event\EntityPresaveEvent;
+use Drupal\web\Service\Ipsum;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class WebSubscriber implements EventSubscriberInterface
 {
-    public function __construct(protected MessengerInterface $messenger)
-    {
+    public function __construct(
+        private readonly Ipsum $ipsum,
+    ) {
     }
 
     public static function getSubscribedEvents(): array
@@ -24,9 +25,8 @@ class WebSubscriber implements EventSubscriberInterface
 
     public function onEntityPresave(EntityPresaveEvent $event): void
     {
-        if ($event->entity->getEntityType()->getClass() === Node::class) {
-            $event->entity->set('body', '123');
-            $this->messenger->addStatus(__FUNCTION__);
+        if ($event->entity instanceof Node) {
+            $this->ipsum->ipsumNode($event->entity);
         }
     }
 }
