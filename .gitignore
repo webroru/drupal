@@ -11,6 +11,7 @@
 !/web/profiles/.gitkeep
 /web/profiles/contrib/
 /web/sites/*/files/
+!/web/sites/*/files/.gitkeep
 /web/sites/*/settings.local.php
 /web/sites/default/default.settings.php
 /web/sites/default/default.services.yml
