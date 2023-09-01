@@ -15,15 +15,21 @@
         },
         {
             "type": "path",
-            "url": "./web/modules/web"
+            "url": "./web/modules/custom/web"
+        },
+        {
+            "type": "path",
+            "url": "./web/modules/custom/dhl_location_finder"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
+        "dhl/dhl_location_finder": "@dev",
         "dhl/web": "@dev",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
-        "drupal/core-recommended": "^10.0"
+        "drupal/core-recommended": "^10.0",
+        "drupal/examples": "^4.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -98,6 +104,7 @@
         }
     },
     "require-dev": {
+        "drupal/core-dev": "^10.1",
         "drush/drush": "^11.5",
         "squizlabs/php_codesniffer": "^3.7"
     }
