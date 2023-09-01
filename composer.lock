@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7482e9b30b8b44264eec8890e0c7878",
+    "content-hash": "ee2a8de2be5aa8db5aa60b1005fb1786",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -290,11 +290,11 @@
         },
         {
             "name": "dhl/location_finder",
-            "version": "v0.0.1",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:webroru/location_finder.git",
-                "reference": "24902dc53381b5cb7fc488c179656eada985a322"
+                "reference": "b45e2e875cc4be51d9050123c80fdf4ee695852d"
             },
             "require": {
                 "phpdocumentor/reflection-docblock": "^5.3",
@@ -305,7 +305,7 @@
                 "proprietary"
             ],
             "description": "description",
-            "time": "2023-09-01T20:25:17+00:00"
+            "time": "2023-09-01T22:03:23+00:00"
         },
         {
             "name": "doctrine/annotations",
