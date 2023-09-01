@@ -36,3 +36,4 @@
 /web/README.txt
 /web/example.gitignore
 /web/README.md
+.phpunit.result.cache
