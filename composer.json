@@ -12,10 +12,15 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:webroru/location_finder.git"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
+        "dhl/location_finder": "^0.0.1",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0"
