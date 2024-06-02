@@ -1,8 +1,7 @@
-FROM php:8-fpm-alpine
+FROM php:8-fpm-alpine as base
 
-# Install dev dependencies
+# Install build dependencies
 RUN apk add --update --no-cache --virtual .build-deps \
-    $PHPIZE_DEPS \
     coreutils \
     freetype-dev \
     icu-dev \
@@ -10,24 +9,17 @@ RUN apk add --update --no-cache --virtual .build-deps \
     libpng-dev \
     libwebp-dev \
     libzip-dev \
-    linux-headers \
     oniguruma-dev
 
-# Install production dependencies
+# Install permanent packages
 RUN apk add --no-cache \
-    bash \
-    curl \
     freetype \
-    git \
     icu \
     libjpeg-turbo \
     libpng \
     libwebp \
     libzip \
     mysql-client
-
-## Install PECL and PEAR extensions
-RUN pecl install xdebug
 
 RUN docker-php-ext-configure gd \
     --with-freetype \
@@ -44,8 +36,7 @@ RUN docker-php-ext-install -j "$(nproc)" \
     pdo_mysql \
     zip
 
-# Install and enable php extensions
-RUN docker-php-ext-enable xdebug gd
+RUN docker-php-ext-enable gd
 
 RUN apk del .build-deps && \
     rm -rf /var/cache/apk/*
@@ -62,3 +53,19 @@ ENV PATH=${PATH}:/var/www/html/vendor/bin
 # Install composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
+
+FROM base as dev
+
+RUN apk add --no-cache \
+    bash
+
+RUN apk add --update --no-cache --virtual .build-deps \
+    $PHPIZE_DEPS \
+    linux-headers
+
+RUN pecl install xdebug
+
+RUN docker-php-ext-enable xdebug
+
+RUN apk del .build-deps && \
+    rm -rf /var/cache/apk/*
