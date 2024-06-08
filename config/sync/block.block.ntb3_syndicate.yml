@@ -1,15 +1,15 @@
-uuid: b07f5481-299c-4d07-bec3-118596f6b0bd
+uuid: 715082bd-e475-4239-8030-13ab1c284cbc
 langcode: ru
 status: true
 dependencies:
   module:
     - node
   theme:
-    - ntb2
+    - ntb3
 _core:
   default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
-id: ntb2_syndicate
-theme: ntb2
+id: ntb3_syndicate
+theme: ntb3
 region: content
 weight: 0
 provider: null

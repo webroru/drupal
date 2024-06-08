@@ -1,13 +1,13 @@
-uuid: 1a91fea1-296f-4467-8be7-07238befa079
+uuid: d5c0147a-b0b8-436f-9df7-8d50c66d12ac
 langcode: ru
 status: true
 dependencies:
   theme:
-    - ntb2
+    - ntb3
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: ntb2_secondary_local_tasks
-theme: ntb2
+id: ntb3_secondary_local_tasks
+theme: ntb3
 region: highlighted
 weight: -2
 provider: null

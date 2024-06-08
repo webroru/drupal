@@ -23,6 +23,7 @@
 /web/sites/simpletest
 !/web/themes/.gitkeep
 /web/themes/contrib/
+/web/themes/custom/ntb3/node_modules/
 /web/.csslintrc
 /web/.editorconfig
 /web/.eslintignore

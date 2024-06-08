@@ -1,13 +1,13 @@
-uuid: 1fb6f33b-8ce3-47db-8959-0dc65caacf3e
+uuid: 430b0e41-9a74-49d5-8b99-654fb42bfa24
 langcode: ru
 status: true
 dependencies:
   theme:
-    - ntb2
+    - ntb3
 _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: ntb2_page_title
-theme: ntb2
+id: ntb3_page_title
+theme: ntb3
 region: content
 weight: -5
 provider: null

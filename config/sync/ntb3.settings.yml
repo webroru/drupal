@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: 71vTnk5szuOQRTsOR-S5bjCzPvkxtx_eVGMqYa_mcqc
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
@@ -14,4 +16,5 @@ logo:
   use_default: true
 schemas:
   bootstrap: 8000
-  ntb2: 8000
+  ntb3: 8000
+cdn_provider: ''
