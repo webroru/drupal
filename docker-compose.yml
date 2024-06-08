@@ -41,11 +41,9 @@ services:
       - ./composer.json:/var/www/html/composer.json
       - ./composer.lock:/var/www/html/composer.lock
       - ./config:/var/www/html/config
-      - ./web/modules/custom:/var/www/html/web/modules/custom
-      - ./web/sites/default/files:/var/www/html/web/sites/default/files
-      - ./web/sites/default/settings.local.php:/var/www/html/web/sites/default/settings.local.php
-      - ./web/sites/default/settings.php:/var/www/html/web/sites/default/settings.php
-      - ./web/themes/custom:/var/www/html/web/themes/custom
+      - ./web/modules:/var/www/html/web/modules
+      - ./web/sites:/var/www/html/web/sites
+      - ./web/themes:/var/www/html/web/themes
     working_dir: /var/www/html
 
 volumes:
