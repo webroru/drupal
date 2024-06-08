@@ -1,0 +1,13 @@
+uuid: 8ea85404-2883-478a-be05-9fd2b701b9f8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KgGJDZFpMaz_8bTv6fN1bXS3Qi5LWmRJI9R53kEGsNQ
+id: node.teaser
+label: Анонс
+description: ''
+targetEntityType: node
+cache: true

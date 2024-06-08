@@ -1,0 +1,23 @@
+uuid: 44ee5041-1310-4a7a-bcdd-824ac4401189
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ntb2
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: ntb2_search_form_wide
+theme: ntb2
+region: content
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Форма поиска (широкая)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

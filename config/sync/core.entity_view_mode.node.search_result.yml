@@ -1,0 +1,13 @@
+uuid: 12be4ef8-c806-490b-ba52-2dc601e3092a
+langcode: ru
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: d8wBEm7XvJ6H3S0IneDD9PfTBklPIH7GMpxElVemPf8
+id: node.search_result
+label: 'Подсвеченный ввод в результатах поиска'
+description: ''
+targetEntityType: node
+cache: true

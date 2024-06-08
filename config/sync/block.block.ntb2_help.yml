@@ -1,0 +1,22 @@
+uuid: e9b21650-cce1-4003-ac37-a7bd918146c9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ntb2
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: ntb2_help
+theme: ntb2
+region: content
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  label_display: '0'
+  provider: help
+visibility: {  }

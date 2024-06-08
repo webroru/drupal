@@ -1,0 +1,23 @@
+uuid: 9f55b796-c3c0-4e64-9509-50be908c8e33
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ntb2
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: ntb2_search_form_narrow
+theme: ntb2
+region: content
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Форма поиска (узкая)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

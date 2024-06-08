@@ -1,0 +1,22 @@
+uuid: 17827018-bcdf-4480-b90d-a8cd891ce7a2
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - ntb2
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: ntb2_primary_local_tasks
+theme: ntb2
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Главные вкладки'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1e155818-900c-452c-a968-0a5a805a3cd0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ntb2
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ntb2_content
+theme: ntb2
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  label_display: '0'
+  provider: system
+visibility: {  }

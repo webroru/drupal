@@ -1,0 +1,22 @@
+uuid: 00a8768a-bddf-46f1-8436-b3f8f667a96f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ntb2
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: ntb2_powered
+theme: ntb2
+region: content
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Сделано на Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

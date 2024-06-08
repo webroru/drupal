@@ -1,0 +1,20 @@
+uuid: 7170891d-bd3a-489b-9d08-bfe53c78198f
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - ntb2
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: ntb2_primary_admin_actions
+theme: ntb2
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  label_display: '0'
+  provider: core
+visibility: {  }
