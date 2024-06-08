@@ -72,4 +72,5 @@ RUN apk del .build-deps \
 
 CMD mkdir web/sites/default/files \
     && mkdir web/sites/default/files/translations \
-    && chown -R www-data: web/sites/default/files
+    && chown -R www-data: web/sites/default/files \
+    && php-fpm
