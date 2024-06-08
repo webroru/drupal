@@ -70,5 +70,9 @@ RUN docker-php-ext-enable xdebug
 RUN apk del .build-deps \
     && rm -rf /var/cache/apk/*
 
+COPY composer.lock composer.json ./
+
+RUN composer install
+
 CMD chown -R www-data: web/sites/default/files \
     && php-fpm
