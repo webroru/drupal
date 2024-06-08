@@ -67,5 +67,9 @@ RUN pecl install xdebug
 
 RUN docker-php-ext-enable xdebug
 
-RUN apk del .build-deps && \
-    rm -rf /var/cache/apk/*
+RUN apk del .build-deps \
+    && rm -rf /var/cache/apk/*
+
+CMD mkdir web/sites/default/files \
+    && mkdir web/sites/default/files/translations \
+    && chown -R www-data: web/sites/default/files
