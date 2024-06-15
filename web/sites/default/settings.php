@@ -117,6 +117,18 @@ $databases['default']['default'] = [
     'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 ];
 
+$databases['d7']['default'] = [
+    'database' => 'drupal',
+    'username' => 'drupal',
+    'password' => 'drupal',
+    'prefix' => '',
+    'host' => 'host.docker.internal',
+    'port' => '13306',
+    'driver' => getenv('DB_DRIVER') ?: 'mysql',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+];
+
 $settings['config_sync_directory'] = '../config/sync';
 
 $settings['file_private_path'] = getenv('FILE_PRIVATE_PATH', '../private');
