@@ -7,8 +7,6 @@
 !/private/.gitkeep
 /vendor/
 /web/core/
-/web/libraries/
-!/web/libraries/.gitkeep
 !/web/modules/.gitkeep
 /web/modules/contrib/
 !/web/profiles/.gitkeep
