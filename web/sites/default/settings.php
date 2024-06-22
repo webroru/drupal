@@ -132,3 +132,10 @@ $databases['d7']['default'] = [
 $settings['config_sync_directory'] = '../config/sync';
 
 $settings['file_private_path'] = getenv('FILE_PRIVATE_PATH', '../private');
+
+$settings['trusted_host_patterns'] = [
+    '^localhost$',
+    '^ntb.donstu.ru$',
+];
+
+$settings['rebuild_access'] = false;
