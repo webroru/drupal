@@ -48,6 +48,8 @@ RUN { \
       echo 'opcache.revalidate_freq=60'; \
     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+RUN echo "memory_limit = 256M" >> /usr/local/etc/php/conf.d/memory-limit.ini
+
 ENV PATH=${PATH}:/var/www/html/vendor/bin
 
 # Install composer
