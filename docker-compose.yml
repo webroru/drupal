@@ -41,6 +41,8 @@ services:
       - ./composer.json:/var/www/html/composer.json
       - ./composer.lock:/var/www/html/composer.lock
       - ./config:/var/www/html/config
+      - ./private:/var/www/html/private
+      - ./web/libraries:/var/www/html/web/libraries
       - ./web/modules:/var/www/html/web/modules
       - ./web/sites:/var/www/html/web/sites
       - ./web/themes:/var/www/html/web/themes
