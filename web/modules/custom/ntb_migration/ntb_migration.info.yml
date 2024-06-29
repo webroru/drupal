@@ -1,0 +1,12 @@
+name: NTB Migration
+type: module
+description: 'Custom migrations from Drupal 7 to Drupal 10.'
+core_version_requirement: ^8 || ^9 || ^10
+package: NTB
+dependencies:
+  - migrate
+  - migrate_tools
+  - migrate_plus
+config_devel:
+  install:
+    - migrate_plus.migration.d7_views_migration

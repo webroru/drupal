@@ -1,0 +1,60 @@
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - views
+      - views_migration
+id: d7_views_migration
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Views
+migration_group: migrate_drupal_7
+label: 'Views Migration (Drupal 7)'
+source:
+  plugin: d7_views_migration
+  constants:
+    - html_list: html_list
+process:
+  id: name
+  label: human_name
+  description: description
+  tag: tag
+  base_table: base_table
+  base_field: base_field
+  display: display
+  style_plugin:
+    -
+      plugin: extract
+      source: display
+      index:
+        - 'default'
+        - 'display_options'
+        - 'style_plugin'
+  style_type:
+    -
+      plugin: extract
+      source: display
+      index:
+        - 'default'
+        - 'display_options'
+        - 'style'
+        - 'type'
+  display/default/display_options/style/type:
+    plugin: static_map
+    source: '@style_type'
+    map:
+      default: html_list
+  display/default/display_options/style_plugin:
+    plugin: static_map
+    source: '@style_plugin'
+    map:
+      list: html_list
+destination:
+  plugin: 'entity:view'
+migration_dependencies:
+  required: {  }
+  optional: {  }

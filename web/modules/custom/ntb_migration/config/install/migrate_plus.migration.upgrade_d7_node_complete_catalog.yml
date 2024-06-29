@@ -1,0 +1,237 @@
+uuid: f6397ab5-7c6f-476a-8a24-7aadfcc43f30
+langcode: ru
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_catalog
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Каталог)'
+source:
+  plugin: d7_node_complete
+  node_type: catalog
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_catalog/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+  field_category:
+    -
+      plugin: sub_process
+      source: field_category
+      process:
+        target_id: tid
+  field_author:
+    -
+      plugin: get
+      source: field_author
+  field_isbn:
+    -
+      plugin: get
+      source: field_isbn
+  field_redaction:
+    -
+      plugin: get
+      source: field_redaction
+  field_publisher:
+    -
+      plugin: get
+      source: field_publisher
+  field_image:
+    -
+      plugin: sub_process
+      source: field_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_udk:
+    -
+      plugin: get
+      source: field_udk
+  field_sign:
+    -
+      plugin: get
+      source: field_sign
+  field_year:
+    -
+      plugin: get
+      source: field_year
+  field_new:
+    -
+      plugin: get
+      source: field_new
+  field_file:
+    -
+      plugin: sub_process
+      source: field_file
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_registration:
+    -
+      plugin: get
+      source: field_registration
+  field_share:
+    -
+      plugin: get
+      source: field_share
+  field_bibliographic_description:
+    -
+      plugin: get
+      source: field_bibliographic_description
+  field_download_counter:
+    -
+      plugin: get
+      source: field_download_counter
+  field_certificate:
+    -
+      plugin: sub_process
+      source: field_certificate
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_certificate_number:
+    -
+      plugin: get
+      source: field_certificate_number
+  field_certificate_date:
+    -
+      plugin: sub_process
+      source: field_certificate_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_certificate_informregistr:
+    -
+      plugin: sub_process
+      source: field_certificate_informregistr
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_certificate_i_number:
+    -
+      plugin: get
+      source: field_certificate_i_number
+  field_certificate_gos_number:
+    -
+      plugin: get
+      source: field_certificate_gos_number
+  field_certificate_i_date:
+    -
+      plugin: sub_process
+      source: field_certificate_i_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_disk_cover:
+    -
+      plugin: sub_process
+      source: field_disk_cover
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_purpose:
+    -
+      plugin: get
+      source: field_purpose
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: catalog
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
+  optional:
+    - upgrade_d7_field_instance

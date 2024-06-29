@@ -1,0 +1,61 @@
+uuid: b3b6c48a-f0c7-4844-879f-5feffd0bd0b0
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bVpxsNkWN_t4qjDlzX3WXZtz0lWfYtfUBAQbSavUFwk
+id: upgrade_d7_menu
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: Menus
+source:
+  plugin: menu
+process:
+  id:
+    -
+      plugin: skip_on_value
+      not_equals: true
+      source: menu_name
+      method: row
+      value:
+        - menu-dstu-library
+        - menu-internet-resources
+        - menu-information
+        - menu-readers
+        - menu-catalog
+        - menu-social
+        - menu-skype
+        - menu-events
+        - menu-services
+    -
+      plugin: static_map
+      bypass: true
+      source: menu_name
+      map:
+        main-menu: main
+        management: admin
+        navigation: tools
+        user-menu: account
+  label:
+    -
+      plugin: get
+      source: title
+  description:
+    -
+      plugin: get
+      source: description
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: en
+destination:
+  plugin: 'entity:menu'
+migration_dependencies:
+  required: {  }
+  optional: {  }
