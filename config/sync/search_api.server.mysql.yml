@@ -1,0 +1,18 @@
+uuid: dbf36716-fc5f-4218-b67e-4e47cb70ee0f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: mysql
+name: MySQL
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 2
+  matching: partial
+  phrase: bigram
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

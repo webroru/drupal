@@ -1,0 +1,115 @@
+uuid: 55639427-8e66-470c-9344-5d7ba89cbbc8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - field.storage.node.field_file
+    - field.storage.node.field_isbn
+    - search_api.server.mysql
+  module:
+    - node
+    - search_api
+id: idnex
+name: Idnex
+description: ''
+read_only: false
+field_settings:
+  field_author:
+    label: Автор
+    datasource_id: 'entity:node'
+    property_path: field_author
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_author
+  field_file:
+    label: Читать
+    datasource_id: 'entity:node'
+    property_path: field_file
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_file
+  field_isbn:
+    label: ISBN
+    datasource_id: 'entity:node'
+    property_path: field_isbn
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_isbn
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Заголовок
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - catalog
+    languages:
+      default: false
+      selected:
+        - ru
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  custom_value: {  }
+  entity_type: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: mysql
