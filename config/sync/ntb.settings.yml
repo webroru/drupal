@@ -9,9 +9,9 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: themes/custom/ntb/images/logo_small.png
   url: null
-  use_default: true
+  use_default: false
 schemas:
   bootstrap: 8000
   ntb: 8000
