@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: /themes/contrib/bootstrap/favicon.ico
+  url: /themes/custom/ntb/favicon.ico
   use_default: true
 features:
   comment_user_picture: true
@@ -15,3 +15,14 @@ logo:
 schemas:
   bootstrap: 8000
   ntb: 8000
+table_responsive: '-1'
+cdn_provider: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset: 'Reset Прервано Cache'
+apply: Применить
+reset_http_request_cache: ''
+table: ''
