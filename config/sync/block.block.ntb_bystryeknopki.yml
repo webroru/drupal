@@ -1,0 +1,34 @@
+uuid: 662814b4-09a2-4e11-ae9a-5bde0b0aa1c0
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:347608c5-a6fd-45bd-9827-a87574e019a1'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - ntb
+third_party_settings:
+  block_class:
+    classes: jumbotron
+id: ntb_bystryeknopki
+theme: ntb
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:347608c5-a6fd-45bd-9827-a87574e019a1'
+settings:
+  id: 'block_content:347608c5-a6fd-45bd-9827-a87574e019a1'
+  label: 'Быстрые кнопки'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
