@@ -1,0 +1,22 @@
+uuid: 142b7990-f85e-4da6-addc-e21b8d82a108
+langcode: ru
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ntb
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: ntb_breadcrumbs
+theme: ntb
+region: navigation
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  label_display: '0'
+  provider: system
+visibility: {  }

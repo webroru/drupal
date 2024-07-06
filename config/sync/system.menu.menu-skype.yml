@@ -1,0 +1,8 @@
+uuid: 292886dd-1661-45f2-8c19-b4af8c052e90
+langcode: en
+status: true
+dependencies: {  }
+id: menu-skype
+label: 'На связи'
+description: 'Связь по Скайпу'
+locked: false

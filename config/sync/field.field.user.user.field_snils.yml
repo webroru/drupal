@@ -1,0 +1,20 @@
+uuid: 8f0a8fc5-54e7-4bd9-85de-f049a6f00a64
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_snils
+  module:
+    - user
+id: user.user.field_snils
+field_name: field_snils
+entity_type: user
+bundle: user
+label: 'Для преподавателей -СНИЛС (вводится без дефисов). Для студентов - номер зачетной книжки'
+description: 'Введите Ваш страховой номер индивидуального лицевого счёта (СНИЛС) или номер зачетной книжки.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

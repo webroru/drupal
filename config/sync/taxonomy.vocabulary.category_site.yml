@@ -1,0 +1,8 @@
+uuid: 4af3c5b4-d56e-42c3-966b-eca4e8cffb30
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории сайта'
+vid: category_site
+description: ''
+weight: 0

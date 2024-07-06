@@ -1,0 +1,38 @@
+uuid: 5b9da73b-5937-462b-8fff-611af635d46f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.podpisnye_resursy_ntb
+  module:
+    - image
+id: node.podpisnye_resursy_ntb.field_image
+field_name: field_image
+entity_type: node
+bundle: podpisnye_resursy_ntb
+label: Изображение
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

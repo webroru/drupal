@@ -1,0 +1,8 @@
+uuid: 0a7d43dd-2363-4bc1-9875-f90fe07bbed9
+langcode: ru
+status: true
+dependencies: {  }
+name: Авторы
+vid: authors
+description: ''
+weight: 0

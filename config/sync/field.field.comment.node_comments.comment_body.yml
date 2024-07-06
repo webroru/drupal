@@ -1,0 +1,24 @@
+uuid: 4d996a54-3b35-4a19-a76c-ec932d8006c5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.node_comments
+    - field.storage.comment.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: dWlqg_QGePh1bX60Pg3FuThe4ZKPAqEBBYStmTcBhgc
+id: comment.node_comments.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: node_comments
+label: Комментарий
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

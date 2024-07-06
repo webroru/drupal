@@ -1,0 +1,19 @@
+uuid: 312933e9-f589-4d8a-b58d-7296a3700efd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn
+    - node.type.catalog
+id: node.catalog.field_isbn
+field_name: field_isbn
+entity_type: node
+bundle: catalog
+label: ISBN
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

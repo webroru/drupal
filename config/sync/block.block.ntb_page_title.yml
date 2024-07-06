@@ -1,0 +1,20 @@
+uuid: 26dd92c9-6324-429b-b40e-ddbd2604ff97
+langcode: ru
+status: false
+dependencies:
+  theme:
+    - ntb
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: ntb_page_title
+theme: ntb
+region: navigation
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  label_display: '0'
+  provider: core
+visibility: {  }

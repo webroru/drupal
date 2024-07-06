@@ -1,0 +1,7 @@
+uuid: 0131de45-da6b-40f6-b327-3e31e1ef864e
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_catalog_form
+captchaType: default
+label: node_catalog_form

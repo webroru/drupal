@@ -1,0 +1,30 @@
+uuid: 83085cfc-b9c7-4099-9096-157bfb9193f9
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: ntb_block_23
+theme: olivero
+region: content
+weight: -41
+provider: null
+plugin: 'block_content:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+settings:
+  id: 'block_content:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+  label: 'Web of Science'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

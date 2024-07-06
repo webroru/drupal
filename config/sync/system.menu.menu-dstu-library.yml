@@ -1,0 +1,8 @@
+uuid: 231b67bf-e8d6-4deb-afd3-c81f6e34d0be
+langcode: en
+status: true
+dependencies: {  }
+id: menu-dstu-library
+label: 'Библиотека ДГТУ'
+description: ''
+locked: false

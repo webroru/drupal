@@ -1,0 +1,30 @@
+uuid: 35878c3c-9fe5-4e43-b490-76b23634bef0
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: ntb_block_11
+theme: olivero
+region: content
+weight: -37
+provider: null
+plugin: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+settings:
+  id: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  label: 'Cоциальные сети'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

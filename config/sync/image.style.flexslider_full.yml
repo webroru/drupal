@@ -1,0 +1,15 @@
+uuid: f8f0b3e8-7908-4347-b378-fa1eed9dfcb0
+langcode: ru
+status: true
+dependencies: {  }
+name: flexslider_full
+label: flexslider_full
+effects:
+  9d0b6059-0339-4941-92a5-c522a360559b:
+    uuid: 9d0b6059-0339-4941-92a5-c522a360559b
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 1000
+      height: 400
+      anchor: center-center

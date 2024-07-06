@@ -1,0 +1,11 @@
+uuid: 9c71f3eb-844d-4d17-a345-684abf0f4ac6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.email_textalt
+label: email_textalt
+description: ''
+targetEntityType: node
+cache: true

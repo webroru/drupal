@@ -1,0 +1,11 @@
+uuid: b6cc2aff-7b80-4144-84fe-c059708529ca
+langcode: ru
+status: true
+dependencies: {  }
+name: Webform
+type: webform
+description: 'Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

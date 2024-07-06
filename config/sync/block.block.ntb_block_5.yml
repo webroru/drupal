@@ -1,0 +1,30 @@
+uuid: 7460b034-25bc-43c5-ab16-a23ac1304894
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: ntb_block_5
+theme: olivero
+region: content
+weight: -48
+provider: null
+plugin: 'block_content:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+settings:
+  id: 'block_content:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+  label: 'Ресурсы библиотеки'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

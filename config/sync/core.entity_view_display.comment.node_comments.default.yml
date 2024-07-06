@@ -1,0 +1,28 @@
+uuid: cb98982b-4c0c-4cb0-8b5c-664b997e674b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.node_comments
+    - field.field.comment.node_comments.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: OWEB911eXSBNMCUWQXyfziz_RNErjgkLsnJRumk0n9k
+id: comment.node_comments.default
+targetEntityType: comment
+bundle: node_comments
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

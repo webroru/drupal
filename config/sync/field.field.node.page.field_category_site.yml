@@ -1,0 +1,26 @@
+uuid: a801289c-225c-4c92-a3c7-4fb8486050b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category_site
+    - node.type.page
+    - taxonomy.vocabulary.category_site
+id: node.page.field_category_site
+field_name: field_category_site
+entity_type: node
+bundle: page
+label: Категория
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category_site: category_site
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 349ffcae-988c-49cd-beef-53abaa986ef3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - node.type.article
+    - node.type.catalog
+    - node.type.page
+    - node.type.podpisnye_resursy_ntb
+  module:
+    - filter
+    - node
+id: moderator
+label: модератор
+weight: 3
+is_admin: null
+permissions:
+  - 'create catalog content'
+  - 'edit any article content'
+  - 'edit any catalog content'
+  - 'edit any page content'
+  - 'edit any podpisnye_resursy_ntb content'
+  - 'edit own article content'
+  - 'edit own catalog content'
+  - 'edit own page content'
+  - 'edit own podpisnye_resursy_ntb content'
+  - 'use text format filtered_html'

@@ -1,0 +1,29 @@
+uuid: db158b88-4fdf-4594-afa3-13c4b983def6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.snils.field_snils
+    - node.type.snils
+  module:
+    - user
+id: node.snils.default
+targetEntityType: node
+bundle: snils
+mode: default
+content:
+  field_snils:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

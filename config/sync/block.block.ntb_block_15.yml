@@ -1,0 +1,30 @@
+uuid: 2aceac7d-2708-4683-a363-9d5a41f40699
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: ntb_block_15
+theme: olivero
+region: content
+weight: -40
+provider: null
+plugin: 'block_content:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+settings:
+  id: 'block_content:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+  label: Scopus
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

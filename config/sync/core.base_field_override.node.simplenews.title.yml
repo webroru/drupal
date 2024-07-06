@@ -1,0 +1,18 @@
+uuid: 7e21b32a-945e-49d0-a242-bbc020ad7c10
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.simplenews
+id: node.simplenews.title
+field_name: title
+entity_type: node
+bundle: simplenews
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

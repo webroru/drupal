@@ -1,0 +1,29 @@
+uuid: 352d9017-8fe3-4571-9076-24ef487a2223
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-events
+  module:
+    - system
+  theme:
+    - olivero
+id: ntb_menu_menu_events
+theme: olivero
+region: content
+weight: -43
+provider: null
+plugin: 'system_menu_block:menu-events'
+settings:
+  id: 'system_menu_block:menu-events'
+  label: ''
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

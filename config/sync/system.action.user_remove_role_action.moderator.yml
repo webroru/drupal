@@ -1,0 +1,14 @@
+uuid: a016430f-a817-40c3-aadf-41a520ea62a1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.moderator
+  module:
+    - user
+id: user_remove_role_action.moderator
+label: 'Удалить роль модератор из выбранных пользователей'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: moderator

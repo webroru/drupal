@@ -1,0 +1,19 @@
+uuid: ead59068-4ddc-4189-bbe4-921b5be951b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.podpisnye_resursy_ntb
+id: node.podpisnye_resursy_ntb.field_link
+field_name: field_link
+entity_type: node
+bundle: podpisnye_resursy_ntb
+label: Ссылка
+description: 'Абсолютная либо относительная ссылка на ресурс. Пример: http://www.yandex.ru или content/node/11'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

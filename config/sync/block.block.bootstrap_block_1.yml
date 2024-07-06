@@ -1,0 +1,35 @@
+uuid: 6de1e64e-090a-491c-bc17-00808fbfdbff
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aea255fd-af66-4793-af29-aace812228f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -42
+provider: null
+plugin: 'block_content:aea255fd-af66-4793-af29-aace812228f2'
+settings:
+  id: 'block_content:aea255fd-af66-4793-af29-aace812228f2'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: |-
+      /ancient
+      /catalog
+      /top-rated
+      /plusone_journal
+      /asa

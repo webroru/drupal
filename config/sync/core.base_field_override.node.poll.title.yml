@@ -1,0 +1,18 @@
+uuid: 962f1315-705f-4c4e-92ea-88de89a51b9d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.poll
+id: node.poll.title
+field_name: title
+entity_type: node
+bundle: poll
+label: Вопрос
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

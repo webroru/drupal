@@ -1,0 +1,14 @@
+uuid: c70a12f9-82dd-4590-8e4f-efd5b19d5e25
+langcode: ru
+status: false
+dependencies: {  }
+name: pe
+format: pe
+weight: 0
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

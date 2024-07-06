@@ -1,0 +1,42 @@
+uuid: 7d191efd-4424-4b55-9282-a978f2fc86d7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.podpisnye_resursy_ntb.field_image
+    - field.field.node.podpisnye_resursy_ntb.field_link
+    - node.type.podpisnye_resursy_ntb
+  module:
+    - image
+    - user
+id: node.podpisnye_resursy_ntb.default
+targetEntityType: node
+bundle: podpisnye_resursy_ntb
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

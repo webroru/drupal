@@ -1,0 +1,7 @@
+uuid: 76aea79f-f838-4cc2-9715-ccceb4b61496
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_slideshow_form
+captchaType: default
+label: node_slideshow_form

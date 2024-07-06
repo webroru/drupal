@@ -1,0 +1,26 @@
+uuid: 36aa7bed-2730-40a4-b333-fdc497c9ec5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.catalog
+    - taxonomy.vocabulary.catalog
+id: node.catalog.field_category
+field_name: field_category
+entity_type: node
+bundle: catalog
+label: Категория
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      catalog: catalog
+    sort:
+      field: _none
+field_type: entity_reference

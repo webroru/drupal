@@ -1,0 +1,25 @@
+uuid: 927076c2-6af5-406c-b030-06362f350ecc
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6bfea466-a8fb-43a4-85b8-360e063e6bcd'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: bootstrap_block_2
+theme: bootstrap
+region: footer
+weight: -31
+provider: null
+plugin: 'block_content:6bfea466-a8fb-43a4-85b8-360e063e6bcd'
+settings:
+  id: 'block_content:6bfea466-a8fb-43a4-85b8-360e063e6bcd'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

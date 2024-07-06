@@ -1,0 +1,8 @@
+uuid: cdb1ddab-98c8-4013-b239-667c155e7f35
+langcode: en
+status: true
+dependencies: {  }
+id: menu-social
+label: 'Мы в соцсетях'
+description: ''
+locked: false

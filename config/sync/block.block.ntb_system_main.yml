@@ -1,0 +1,22 @@
+uuid: 8bad3225-b616-4e8f-9c6a-c270d9783cba
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ntb_system_main
+theme: olivero
+region: content
+weight: -45
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

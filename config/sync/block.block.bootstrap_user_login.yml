@@ -1,0 +1,25 @@
+uuid: 97b40168-2c88-4a0e-983e-654cc0559562
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: bootstrap_user_login
+theme: bootstrap
+region: sidebar_second
+weight: -51
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /top-rated

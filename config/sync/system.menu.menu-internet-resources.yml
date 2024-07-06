@@ -1,0 +1,8 @@
+uuid: f42534bd-aaa7-4af0-9f55-f2fa736aaa55
+langcode: en
+status: true
+dependencies: {  }
+id: menu-internet-resources
+label: 'Интернет ресурсы'
+description: ''
+locked: false

@@ -1,0 +1,19 @@
+uuid: 01448d01-6d41-4722-aad2-376b1f7f8795
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher
+    - node.type.catalog
+id: node.catalog.field_publisher
+field_name: field_publisher
+entity_type: node
+bundle: catalog
+label: Издательство
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 99d3edcd-c1c5-45b6-a46b-d2b0862db878
+langcode: en
+status: true
+dependencies: {  }
+id: menu-events
+label: События
+description: ''
+locked: false

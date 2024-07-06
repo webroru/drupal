@@ -1,0 +1,14 @@
+uuid: 82935c5b-9a61-4888-aef3-d137c39f756b
+langcode: ru
+status: false
+dependencies: {  }
+name: no_work
+format: no_work
+weight: 0
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

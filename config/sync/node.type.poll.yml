@@ -1,0 +1,18 @@
+uuid: fa1dd7bd-986b-436f-8fbb-98cd31843a8e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Опрос
+type: poll
+description: '<em>Опрос</em> с несколькими вариантами ответа, которые посетители могут выбрать. Однажды созданный, <em>опрос</em> автоматически подсчитывает количество голосов за каждый вариант ответа.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

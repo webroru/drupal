@@ -1,0 +1,25 @@
+uuid: a96e60bd-d6a1-443b-ada2-cc4296280b9f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: ntb_user_login
+theme: olivero
+region: content
+weight: -45
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /top-rated

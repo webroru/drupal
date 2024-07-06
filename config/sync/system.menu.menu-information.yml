@@ -1,0 +1,8 @@
+uuid: 0c17e241-3ca8-4ab8-9b56-f9332d2a3ab8
+langcode: en
+status: true
+dependencies: {  }
+id: menu-information
+label: Информация
+description: ''
+locked: false

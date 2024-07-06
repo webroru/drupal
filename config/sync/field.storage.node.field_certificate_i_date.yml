@@ -1,0 +1,20 @@
+uuid: 5c60c7c0-9372-4c18-9180-350e92b2bfb3
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_certificate_i_date
+field_name: field_certificate_i_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

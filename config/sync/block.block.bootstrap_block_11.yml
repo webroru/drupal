@@ -1,0 +1,30 @@
+uuid: 46493e06-eed0-400b-b37d-4085bccf12ce
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_block_11
+theme: bootstrap
+region: sidebar_second
+weight: -45
+provider: null
+plugin: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+settings:
+  id: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  label: 'Cоциальные сети'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

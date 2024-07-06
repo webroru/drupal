@@ -1,0 +1,15 @@
+uuid: 0007cb65-f15a-43bc-8372-431243ce68ff
+langcode: ru
+status: true
+dependencies: {  }
+name: flexslider_thumbnail
+label: flexslider_thumbnail
+effects:
+  dad4f81e-d494-4ae0-9e85-a799763c6d34:
+    uuid: dad4f81e-d494-4ae0-9e85-a799763c6d34
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 48
+      anchor: center-center

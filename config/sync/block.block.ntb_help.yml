@@ -1,0 +1,22 @@
+uuid: c6ed4f3c-e7ed-4074-880c-4b67bcb91e3b
+langcode: ru
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ntb
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: ntb_help
+theme: ntb
+region: navigation
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  label_display: '0'
+  provider: help
+visibility: {  }

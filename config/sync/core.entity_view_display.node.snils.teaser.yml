@@ -1,0 +1,30 @@
+uuid: 3c771c2d-fa86-4daf-a4e1-5921a033c433
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.snils.field_snils
+    - node.type.snils
+  module:
+    - user
+id: node.snils.teaser
+targetEntityType: node
+bundle: snils
+mode: teaser
+content:
+  field_snils:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

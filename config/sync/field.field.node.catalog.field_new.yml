@@ -1,0 +1,23 @@
+uuid: 0363284a-40ff-4a1d-813d-835c4d338a73
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_new
+    - node.type.catalog
+id: node.catalog.field_new
+field_name: field_new
+entity_type: node
+bundle: catalog
+label: Новинка
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

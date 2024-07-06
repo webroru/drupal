@@ -1,0 +1,122 @@
+uuid: b95c61fc-b543-4d68-af9f-fedda6c84fdb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.catalog.body
+    - field.field.node.catalog.field_author
+    - field.field.node.catalog.field_bibliographic_description
+    - field.field.node.catalog.field_category
+    - field.field.node.catalog.field_certificate
+    - field.field.node.catalog.field_certificate_date
+    - field.field.node.catalog.field_certificate_gos_number
+    - field.field.node.catalog.field_certificate_i_date
+    - field.field.node.catalog.field_certificate_i_number
+    - field.field.node.catalog.field_certificate_informregistr
+    - field.field.node.catalog.field_certificate_number
+    - field.field.node.catalog.field_disk_cover
+    - field.field.node.catalog.field_download_counter
+    - field.field.node.catalog.field_file
+    - field.field.node.catalog.field_image
+    - field.field.node.catalog.field_isbn
+    - field.field.node.catalog.field_new
+    - field.field.node.catalog.field_publisher
+    - field.field.node.catalog.field_purpose
+    - field.field.node.catalog.field_redaction
+    - field.field.node.catalog.field_sign
+    - field.field.node.catalog.field_tags
+    - field.field.node.catalog.field_udk
+    - field.field.node.catalog.field_year
+    - image.style.thumbnail
+    - node.type.catalog
+  module:
+    - field_formatter_class
+    - image
+    - text
+    - user
+id: node.catalog.teaser
+targetEntityType: node
+bundle: catalog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_author:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: thumbnail
+    weight: 1
+    region: content
+  field_isbn:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_publisher:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_year:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_bibliographic_description: true
+  field_category: true
+  field_certificate: true
+  field_certificate_date: true
+  field_certificate_gos_number: true
+  field_certificate_i_date: true
+  field_certificate_i_number: true
+  field_certificate_informregistr: true
+  field_certificate_number: true
+  field_disk_cover: true
+  field_download_counter: true
+  field_file: true
+  field_new: true
+  field_purpose: true
+  field_redaction: true
+  field_sign: true
+  field_tags: true
+  field_udk: true
+  langcode: true
+  search_api_excerpt: true

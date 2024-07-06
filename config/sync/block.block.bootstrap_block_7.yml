@@ -1,0 +1,30 @@
+uuid: d061e0a1-993e-4f78-b159-8572d7d736cb
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_block_7
+theme: bootstrap
+region: sidebar_second
+weight: -46
+provider: null
+plugin: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+settings:
+  id: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  label: 'Тестовый доступ'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

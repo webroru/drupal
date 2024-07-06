@@ -1,0 +1,22 @@
+uuid: 91fbc60a-22ff-474d-a78f-406608d4dedf
+langcode: ru
+status: false
+dependencies:
+  theme:
+    - ntb
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: ntb_local_tasks
+theme: ntb
+region: navigation
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

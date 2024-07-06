@@ -1,0 +1,8 @@
+uuid: 57de812b-7a98-466c-baeb-70a4dd5418f0
+langcode: en
+status: true
+dependencies: {  }
+id: menu-readers
+label: Читателям
+description: ''
+locked: false

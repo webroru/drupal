@@ -1,0 +1,25 @@
+uuid: 3c07a9a7-bed6-4d41-b9e8-a5c7eddb1dda
+langcode: ru
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ntb
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: ntb_branding
+theme: ntb
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендинг сайта'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 0fe82a5a-b0d9-4e4e-a90a-641965f3f9ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_gos_number
+    - node.type.catalog
+id: node.catalog.field_certificate_gos_number
+field_name: field_certificate_gos_number
+entity_type: node
+bundle: catalog
+label: 'Номер государственной регистрации обязательного экземпляра электронного издания'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

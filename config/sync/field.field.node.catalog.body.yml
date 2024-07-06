@@ -1,0 +1,24 @@
+uuid: 57d5b5dd-aa72-40e4-a9fb-2602a031cd1d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.catalog
+  module:
+    - text
+id: node.catalog.body
+field_name: body
+entity_type: node
+bundle: catalog
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

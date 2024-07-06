@@ -1,0 +1,7 @@
+uuid: 64625a16-2e90-4512-b822-e0c7b8ca5746
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_migrate_example_producer_form
+captchaType: default
+label: node_migrate_example_producer_form

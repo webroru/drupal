@@ -1,0 +1,29 @@
+uuid: 476cb2d8-81aa-4046-ac24-41a94d09d1fc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-events
+  module:
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_menu_menu_events
+theme: bootstrap
+region: sidebar_second
+weight: -44
+provider: null
+plugin: 'system_menu_block:menu-events'
+settings:
+  id: 'system_menu_block:menu-events'
+  label: ''
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

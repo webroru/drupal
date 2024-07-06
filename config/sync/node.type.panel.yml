@@ -1,0 +1,11 @@
+uuid: bb25e46b-b35b-49c1-9800-1c9bfae01e3d
+langcode: ru
+status: true
+dependencies: {  }
+name: Панель
+type: panel
+description: 'Макет панели разбит на строки и столбцы.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

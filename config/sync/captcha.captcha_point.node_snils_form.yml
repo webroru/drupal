@@ -1,0 +1,7 @@
+uuid: 4803ef42-ab53-4924-b031-a7370a69170f
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_snils_form
+captchaType: default
+label: node_snils_form

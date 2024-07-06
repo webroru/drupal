@@ -1,0 +1,40 @@
+uuid: ee38b47f-a27a-4fd7-a230-09cf40688134
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap
+id: bootstrap_block_17
+theme: bootstrap
+region: sidebar_second
+weight: -49
+provider: null
+plugin: 'block_content:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+settings:
+  id: 'block_content:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+  label: РИНЦ
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

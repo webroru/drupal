@@ -1,0 +1,19 @@
+uuid: 6d4a5302-60ec-42e0-bc3b-79be01e28d08
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_number
+    - node.type.catalog
+id: node.catalog.field_certificate_number
+field_name: field_certificate_number
+entity_type: node
+bundle: catalog
+label: 'Номер свидетельства ДГТУ о регистрации электронного издания'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

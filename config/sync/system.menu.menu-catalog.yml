@@ -1,0 +1,8 @@
+uuid: 7a3706b0-12c1-4fc1-a4b1-eeb34da2335c
+langcode: en
+status: true
+dependencies: {  }
+id: menu-catalog
+label: Каталог
+description: ''
+locked: false

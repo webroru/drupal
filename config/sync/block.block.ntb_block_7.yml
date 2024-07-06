@@ -1,0 +1,30 @@
+uuid: 284ad3f0-479e-46db-a6ae-c2ef2de04f47
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: ntb_block_7
+theme: olivero
+region: content
+weight: -38
+provider: null
+plugin: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+settings:
+  id: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  label: 'Тестовый доступ'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

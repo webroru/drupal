@@ -1,0 +1,23 @@
+uuid: 06660be6-05da-461b-811c-2781e4731e99
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.catalog
+id: node.catalog.field_year
+field_name: field_year
+entity_type: node
+bundle: catalog
+label: 'Год издания'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' г.'
+field_type: integer

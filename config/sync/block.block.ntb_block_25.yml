@@ -1,0 +1,25 @@
+uuid: 29e8f190-722c-4d2b-8822-166ba192f39b
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8d77857a-aed3-490d-8ce5-23bab649671d'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: ntb_block_25
+theme: olivero
+region: content
+weight: -48
+provider: null
+plugin: 'block_content:8d77857a-aed3-490d-8ce5-23bab649671d'
+settings:
+  id: 'block_content:8d77857a-aed3-490d-8ce5-23bab649671d'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

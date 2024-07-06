@@ -1,0 +1,21 @@
+uuid: 35a56912-7e0a-4631-b2ae-08176ee903a0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_i_date
+    - node.type.catalog
+  module:
+    - datetime
+id: node.catalog.field_certificate_i_date
+field_name: field_certificate_i_date
+entity_type: node
+bundle: catalog
+label: 'Дата регистрации'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

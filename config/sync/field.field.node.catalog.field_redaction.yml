@@ -1,0 +1,19 @@
+uuid: 5a6a549c-2991-4276-855c-181f150df721
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_redaction
+    - node.type.catalog
+id: node.catalog.field_redaction
+field_name: field_redaction
+entity_type: node
+bundle: catalog
+label: Редакция
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

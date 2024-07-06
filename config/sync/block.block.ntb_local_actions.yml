@@ -1,0 +1,20 @@
+uuid: f662f495-2436-4e4d-980a-2dbaaa552662
+langcode: ru
+status: false
+dependencies:
+  theme:
+    - ntb
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: ntb_local_actions
+theme: ntb
+region: navigation
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: d5fff686-d93a-416d-b68e-e0c73a3de717
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Каталог
+type: catalog
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

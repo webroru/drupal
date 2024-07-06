@@ -1,0 +1,19 @@
+uuid: 0063031a-eea2-41db-ad4b-27fb6621903e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purpose
+    - node.type.catalog
+id: node.catalog.field_purpose
+field_name: field_purpose
+entity_type: node
+bundle: catalog
+label: Назначение
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

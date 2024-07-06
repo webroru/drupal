@@ -1,0 +1,19 @@
+uuid: a9fd43eb-ef84-40b7-b291-2c298a725d2d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_i_number
+    - node.type.catalog
+id: node.catalog.field_certificate_i_number
+field_name: field_certificate_i_number
+entity_type: node
+bundle: catalog
+label: 'Номер свидетельства ФГУП НТЦ Информрегистр'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

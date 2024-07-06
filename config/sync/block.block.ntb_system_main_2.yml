@@ -1,0 +1,22 @@
+uuid: 066ad39d-a359-47f5-b7a0-4dec67ee0a23
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ntb
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: ntb_system_main_2
+theme: ntb
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

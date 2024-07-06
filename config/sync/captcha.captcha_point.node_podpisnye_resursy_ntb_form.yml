@@ -1,0 +1,7 @@
+uuid: 86febdbd-9024-4447-818e-dbf273de510a
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_podpisnye_resursy_ntb_form
+captchaType: default
+label: node_podpisnye_resursy_ntb_form

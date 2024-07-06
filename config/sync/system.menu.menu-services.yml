@@ -1,0 +1,8 @@
+uuid: 8a36d2cf-24c3-4e44-a7db-92957a86dddd
+langcode: en
+status: true
+dependencies: {  }
+id: menu-services
+label: Услуги
+description: ''
+locked: false
