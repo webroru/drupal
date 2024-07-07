@@ -167,10 +167,37 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
+{% if page.footer or page.pre_footer_item_1 or page.pre_footer_item_2 or page.pre_footer_item_3 or page.pre_footer_item_4 %}
+  <footer class="footer {{ container }}" role="contentinfo">
+    {% if page.pre_footer_item_1 or page.pre_footer_item_2 or page.pre_footer_item_3 or page.pre_footer_item_4 %}
+      <div class="row">
+        {% if page.pre_footer_item_1 %}
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            {{ page.pre_footer_item_1 }}
+          </div>
+        {% endif %}
+        {% if page.pre_footer_item_2 %}
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            {{ page.pre_footer_item_2 }}
+          </div>
+        {% endif %}
+        {% if page.pre_footer_item_3 %}
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            {{ page.pre_footer_item_3 }}
+          </div>
+        {% endif %}
+        {% if page.pre_footer_item_4 %}
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            {{ page.pre_footer_item_4 }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if page.footer %}
+      {% block footer %}
+        {{ page.footer }}
+      {% endblock %}
+    {% endif %}
+  </footer>
 {% endif %}

@@ -15,6 +15,10 @@ regions:
   content: Content
   sidebar_first: Primary
   sidebar_second: Secondary
+  pre_footer_item_1: Pre Footer Item 1
+  pre_footer_item_2: Pre Footer Item 2
+  pre_footer_item_3: Pre Footer Item 3
+  pre_footer_item_4: Pre Footer Item 4
   footer: Footer
   page_top: Page top
   page_bottom: Page bottom
