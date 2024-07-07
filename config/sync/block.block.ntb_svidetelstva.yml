@@ -1,0 +1,25 @@
+uuid: 84655863-ded1-4842-bb22-3fd8d2c7c8b7
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7f9b93df-efe3-4a58-a60a-516a46d895eb'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_svidetelstva
+theme: ntb
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7f9b93df-efe3-4a58-a60a-516a46d895eb'
+settings:
+  id: 'block_content:7f9b93df-efe3-4a58-a60a-516a46d895eb'
+  label: Свидетельства
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

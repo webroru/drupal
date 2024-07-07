@@ -4,6 +4,7 @@ langcode: ru
 maxlength_block_class_field: 255
 field_type: multiple_textfields
 default_case: standard
+block_classes_stored: '{"jumbotron":"jumbotron"}'
 enable_attributes: true
 enable_auto_complete: true
 qty_classes_per_block: 10
