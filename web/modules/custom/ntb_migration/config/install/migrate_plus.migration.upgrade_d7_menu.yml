@@ -23,6 +23,7 @@ process:
       source: menu_name
       method: row
       value:
+        - main-menu
         - menu-dstu-library
         - menu-internet-resources
         - menu-information
