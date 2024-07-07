@@ -1,0 +1,33 @@
+uuid: 7ee8ff7e-e4cc-43fd-a8b7-e4351a004a27
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-dstu-library
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_bibliotekadgtu
+theme: ntb
+region: pre_footer_item_1
+weight: 0
+provider: null
+plugin: 'menu_block:menu-dstu-library'
+settings:
+  id: 'menu_block:menu-dstu-library'
+  label: 'Библиотека ДГТУ'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-dstu-library:'
+  render_parent: false
+  suggestion: menu_dstu_library
+  hide_on_nonactive: false
+visibility: {  }

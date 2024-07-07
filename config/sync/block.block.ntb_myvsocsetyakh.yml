@@ -1,0 +1,33 @@
+uuid: 2267a142-4134-424d-90ed-a27a5420aaff
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-social
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_myvsocsetyakh
+theme: ntb
+region: pre_footer_item_1
+weight: 0
+provider: null
+plugin: 'menu_block:menu-social'
+settings:
+  id: 'menu_block:menu-social'
+  label: 'Мы в соцсетях'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-social:'
+  render_parent: false
+  suggestion: menu_social
+  hide_on_nonactive: false
+visibility: {  }

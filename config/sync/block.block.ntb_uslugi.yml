@@ -1,0 +1,33 @@
+uuid: f4f94a0f-f0d4-4034-a95e-fe7ed4cd8e3c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-services
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_uslugi
+theme: ntb
+region: pre_footer_item_1
+weight: 0
+provider: null
+plugin: 'menu_block:menu-services'
+settings:
+  id: 'menu_block:menu-services'
+  label: Услуги
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-services:'
+  render_parent: false
+  suggestion: menu_services
+  hide_on_nonactive: false
+visibility: {  }

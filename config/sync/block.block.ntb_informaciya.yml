@@ -1,0 +1,33 @@
+uuid: 8e5ef90b-73c4-45b3-b768-09fe74e804dc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-information
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_informaciya
+theme: ntb
+region: pre_footer_item_4
+weight: 0
+provider: null
+plugin: 'menu_block:menu-information'
+settings:
+  id: 'menu_block:menu-information'
+  label: Информация
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-information:'
+  render_parent: false
+  suggestion: menu_information
+  hide_on_nonactive: false
+visibility: {  }
