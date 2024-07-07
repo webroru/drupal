@@ -1,7 +1,0 @@
-uuid: 046da36c-cdf2-4d5b-aab0-e2edba178248
-langcode: ru
-status: false
-dependencies: {  }
-formId: node_migrate_example_wine_form
-captchaType: default
-label: node_migrate_example_wine_form

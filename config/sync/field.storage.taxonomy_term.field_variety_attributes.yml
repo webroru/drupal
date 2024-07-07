@@ -4,9 +4,6 @@ status: true
 dependencies:
   module:
     - taxonomy
-  enforced:
-    module:
-      - migrate_example_advanced_setup
 _core:
   default_config_hash: RBnie4YHiYK6ejVoATrzZuvl18n3k6N2Qafn4_rp2nw
 id: taxonomy_term.field_variety_attributes
