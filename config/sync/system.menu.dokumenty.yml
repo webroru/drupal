@@ -1,0 +1,8 @@
+uuid: f870422c-dba6-41c7-8e8f-e59a84c52df3
+langcode: ru
+status: true
+dependencies: {  }
+id: dokumenty
+label: Документы
+description: ''
+locked: false

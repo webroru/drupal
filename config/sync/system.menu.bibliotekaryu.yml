@@ -1,0 +1,8 @@
+uuid: 9a04b896-cbc9-42ee-a9b3-c025bbddd795
+langcode: ru
+status: true
+dependencies: {  }
+id: bibliotekaryu
+label: Библиотекарю
+description: ''
+locked: false

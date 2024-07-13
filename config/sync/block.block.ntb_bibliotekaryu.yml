@@ -1,0 +1,33 @@
+uuid: f887cdbc-3b4b-440f-9d58-1a07fd7c4221
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.bibliotekaryu
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_bibliotekaryu
+theme: ntb
+region: pre_footer_item_3
+weight: 0
+provider: null
+plugin: 'menu_block:bibliotekaryu'
+settings:
+  id: 'menu_block:bibliotekaryu'
+  label: Библиотекарю
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'bibliotekaryu:'
+  render_parent: false
+  suggestion: bibliotekaryu
+  hide_on_nonactive: false
+visibility: {  }
