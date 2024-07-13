@@ -1,5 +1,5 @@
 uuid: 50f88255-8941-4112-b2a3-d6cd00ad3338
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: 'User account menu'
+  label: 'Меню учётной записи пользователя'
   label_display: '0'
   provider: system
   level: 1

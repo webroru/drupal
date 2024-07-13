@@ -1,5 +1,5 @@
 uuid: 30253a0b-e3d0-45cf-9a60-0805468fc083
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Tools
+  label: Инструменты
   label_display: visible
   provider: system
   level: 1

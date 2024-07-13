@@ -1,7 +1,7 @@
 uuid: f72c99db-a661-4ca2-a94a-3afe2d118b2c
 langcode: ru
 status: true
-dependencies: {}
+dependencies: {  }
 _core:
   default_config_hash: yy3ElLamClUaq0EA3lRtMZiSJlryYzhsU7saRZt6kYQ
 id: node_comments

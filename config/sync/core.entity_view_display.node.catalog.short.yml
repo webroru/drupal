@@ -217,3 +217,4 @@ hidden:
   field_disk_cover: true
   field_purpose: true
   langcode: true
+  search_api_excerpt: true

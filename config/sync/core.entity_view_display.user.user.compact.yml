@@ -32,3 +32,4 @@ hidden:
   field_snils: true
   langcode: true
   member_for: true
+  search_api_excerpt: true
