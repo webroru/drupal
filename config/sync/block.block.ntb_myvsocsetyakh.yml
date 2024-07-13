@@ -11,7 +11,7 @@ dependencies:
 id: ntb_myvsocsetyakh
 theme: ntb
 region: pre_footer_item_1
-weight: 0
+weight: 2
 provider: null
 plugin: 'menu_block:menu-social'
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: ntb_uslugi
 theme: ntb
 region: pre_footer_item_1
-weight: 0
+weight: 1
 provider: null
 plugin: 'menu_block:menu-services'
 settings:
