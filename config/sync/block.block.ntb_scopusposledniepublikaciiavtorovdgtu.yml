@@ -1,0 +1,25 @@
+uuid: e2c6b3e2-7746-422e-b9c6-c23c2f868c14
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_scopusposledniepublikaciiavtorovdgtu
+theme: ntb
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'block_content:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+settings:
+  id: 'block_content:51fa8061-0eaf-42b1-a651-0eaef1feb8a7'
+  label: 'Scopus - последние публикации авторов ДГТУ'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

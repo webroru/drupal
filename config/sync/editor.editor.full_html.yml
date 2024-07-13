@@ -13,6 +13,7 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - style
       - bold
       - italic
       - strikethrough
@@ -22,6 +23,7 @@ settings:
       - '|'
       - link
       - '|'
+      - alignment
       - bulletedList
       - numberedList
       - '|'
@@ -35,6 +37,12 @@ settings:
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -
@@ -95,6 +103,26 @@ settings:
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: Muted
+          element: '<span class="text-muted">'
+        -
+          label: Primary
+          element: '<span class="text-primary">'
+        -
+          label: Success
+          element: '<span class="text-success">'
+        -
+          label: Info
+          element: '<span class="text-info">'
+        -
+          label: Warning
+          element: '<span class="text-warning">'
+        -
+          label: Danger
+          element: '<span class="text-danger">'
 image_upload:
   status: true
   scheme: public

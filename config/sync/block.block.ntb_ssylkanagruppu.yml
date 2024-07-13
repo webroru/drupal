@@ -1,0 +1,25 @@
+uuid: 6d07b8a0-4d1e-42d0-9067-7e3a925dc1af
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_ssylkanagruppu
+theme: ntb
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+settings:
+  id: 'block_content:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
+  label: 'Ссылка на группу'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

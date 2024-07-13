@@ -1,0 +1,25 @@
+uuid: 2b25c5ea-48da-4c61-b71f-2a5429abf04e
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_rinc
+theme: ntb
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'block_content:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+settings:
+  id: 'block_content:8e1879c9-8c39-48b3-90c5-956797f7dedc'
+  label: РИНЦ
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 5a72b048-a365-4fb8-bf7d-cec619b3dd6a
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:106bc80a-e797-4391-876e-8ad88c6e1178'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_video
+theme: ntb
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:106bc80a-e797-4391-876e-8ad88c6e1178'
+settings:
+  id: 'block_content:106bc80a-e797-4391-876e-8ad88c6e1178'
+  label: video
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

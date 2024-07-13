@@ -1,0 +1,33 @@
+uuid: a85555fe-23fe-42ba-9cd8-e470ca6b5096
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.menu-events
+  module:
+    - menu_block
+  theme:
+    - ntb
+id: ntb_sobytiya
+theme: ntb
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'menu_block:menu-events'
+settings:
+  id: 'menu_block:menu-events'
+  label: События
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-events:'
+  render_parent: false
+  suggestion: menu_events
+  hide_on_nonactive: false
+visibility: {  }

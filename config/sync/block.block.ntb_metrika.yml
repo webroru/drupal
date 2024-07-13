@@ -1,0 +1,25 @@
+uuid: 26268aaa-eaae-434d-a7e3-9ca44212ec43
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1d41f5c9-3986-429a-950b-229fb58a4ca5'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_metrika
+theme: ntb
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:1d41f5c9-3986-429a-950b-229fb58a4ca5'
+settings:
+  id: 'block_content:1d41f5c9-3986-429a-950b-229fb58a4ca5'
+  label: Метрика
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

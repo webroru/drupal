@@ -1,0 +1,25 @@
+uuid: bc69f3de-c5cd-4040-bec3-93debbd05726
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  module:
+    - block_content
+  theme:
+    - ntb
+id: ntb_testovyydostup
+theme: ntb
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+settings:
+  id: 'block_content:b4562d1a-86fa-4eb9-8626-4954378d35b0'
+  label: 'Тестовый доступ'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

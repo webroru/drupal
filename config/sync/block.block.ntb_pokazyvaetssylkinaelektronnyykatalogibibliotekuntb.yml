@@ -1,0 +1,26 @@
+uuid: cb880777-fbfb-4872-a3a9-4601f739e813
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - ntb
+id: ntb_pokazyvaetssylkinaelektronnyykatalogibibliotekuntb
+theme: ntb
+region: sidebar_second
+weight: -16
+provider: null
+plugin: 'block_content:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+settings:
+  id: 'block_content:a4144f47-41e4-4a71-a7c6-eef1501750a5'
+  label: 'Ресурсы библиотеки'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 93cc9933-5183-436d-813b-eb24266a0fc5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - ntb
+id: ntb_vkhodnasayt
+theme: ntb
+region: sidebar_second
+weight: -13
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Вход на сайт'
+  label_display: visible
+  provider: user
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: fa803f86-8223-489d-b2d3-d7142ea8173a
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - ntb
+id: ntb_webofscience
+theme: ntb
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+settings:
+  id: 'block_content:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
+  label: 'Подписные ресурсы НТБ'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
