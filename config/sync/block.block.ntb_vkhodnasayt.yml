@@ -9,7 +9,7 @@ dependencies:
 id: ntb_vkhodnasayt
 theme: ntb
 region: sidebar_second
-weight: -13
+weight: 3
 provider: null
 plugin: user_login_block
 settings:

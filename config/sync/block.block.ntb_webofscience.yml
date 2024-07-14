@@ -5,14 +5,13 @@ dependencies:
   content:
     - 'block_content:basic:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
   module:
-    - block_class
     - block_content
   theme:
     - ntb
 id: ntb_webofscience
 theme: ntb
 region: sidebar_second
-weight: -10
+weight: 5
 provider: null
 plugin: 'block_content:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
 settings:

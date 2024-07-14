@@ -1,0 +1,25 @@
+uuid: aab03b08-f9c2-4b64-8424-00d418529de5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - tagclouds
+  theme:
+    - ntb
+id: ntb_tegivtegi
+theme: ntb
+region: sidebar_second
+weight: 9
+provider: null
+plugin: 'tagclouds_block:tags'
+settings:
+  id: 'tagclouds_block:tags'
+  label: 'Популярные метки'
+  label_display: visible
+  provider: tagclouds
+  cache:
+    max_age: 0
+    contexts: {  }
+  tags: '20'
+  vocabulary: tags
+visibility: {  }

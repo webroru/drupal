@@ -11,7 +11,7 @@ dependencies:
 id: ntb_video
 theme: ntb
 region: sidebar_second
-weight: -15
+weight: 1
 provider: null
 plugin: 'block_content:106bc80a-e797-4391-876e-8ad88c6e1178'
 settings:
