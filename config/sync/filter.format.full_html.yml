@@ -34,7 +34,7 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<span class="text-muted text-primary text-success text-info text-warning text-danger">'
+      allowed_html: '<script> <span class="text-muted text-primary text-success text-info text-warning text-danger">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
