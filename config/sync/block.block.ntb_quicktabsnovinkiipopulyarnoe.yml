@@ -1,0 +1,20 @@
+uuid: 28790573-4cf0-48c0-98a8-b348b0391220
+langcode: ru
+status: true
+dependencies:
+  module:
+    - quicktabs
+  theme:
+    - ntb
+id: ntb_quicktabsnovinkiipopulyarnoe
+theme: ntb
+region: sidebar_second
+weight: 9
+provider: null
+plugin: 'quicktabs_block:novinki_i_populyarnoe'
+settings:
+  id: 'quicktabs_block:novinki_i_populyarnoe'
+  label: 'QuickTabs - Новинки и Популярное '
+  label_display: '0'
+  provider: quicktabs
+visibility: {  }

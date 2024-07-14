@@ -9,7 +9,7 @@ dependencies:
 id: ntb_tegivtegi
 theme: ntb
 region: sidebar_second
-weight: 9
+weight: 10
 provider: null
 plugin: 'tagclouds_block:tags'
 settings:

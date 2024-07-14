@@ -61,6 +61,7 @@ module:
   path_alias: 0
   pdf: 0
   phpass: 0
+  quicktabs: 0
   rest: 0
   search: 0
   search_api: 0

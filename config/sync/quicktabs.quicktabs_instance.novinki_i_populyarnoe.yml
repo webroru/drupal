@@ -1,0 +1,61 @@
+uuid: bfa0d4ba-d624-43f9-8e3b-9e54f25791e5
+langcode: ru
+status: true
+dependencies: {  }
+id: novinki_i_populyarnoe
+label: 'Новинки и Популярное '
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: tabsbar
+configuration_data:
+  -
+    title: Новинки
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:novinki_i_populyarnoe-block_1'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Популярное
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:novinki_i_populyarnoe-block_2'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
