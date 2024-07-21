@@ -1,0 +1,26 @@
+uuid: c47ac508-d492-436e-a80c-881d03326c2c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - search_api.index.idnex
+id: poisk_po_saytu
+label: 'Поиск по сайту'
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: idnex
+limit: 10
+searched_fields:
+  field_author: field_author
+  field_file: field_file
+  field_isbn: field_isbn
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: teaser
+    overrides:
+      catalog: ''
+show_search_form: false
+parse_mode: direct

@@ -31,10 +31,50 @@ dependencies:
     - image.style.thumbnail
     - node.type.catalog
   module:
+    - ds
     - field_formatter_class
     - image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      top:
+        - node_title
+      first:
+        - field_image
+      second:
+        - field_author
+        - field_isbn
+        - field_year
+        - field_publisher
+      bottom:
+        - body
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 7
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          link_target: ''
+          wrapper: ''
+          class: ''
 id: node.catalog.teaser
 targetEntityType: node
 bundle: catalog
@@ -47,7 +87,7 @@ content:
       trim_length: 300
     third_party_settings: {  }
     weight: 6
-    region: content
+    region: bottom
   field_author:
     type: string
     label: inline
@@ -55,7 +95,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 2
-    region: content
+    region: second
   field_image:
     type: image
     label: hidden
@@ -68,7 +108,7 @@ content:
       field_formatter_class:
         class: thumbnail
     weight: 1
-    region: content
+    region: first
   field_isbn:
     type: string
     label: inline
@@ -76,7 +116,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
-    region: content
+    region: second
   field_publisher:
     type: string
     label: inline
@@ -84,7 +124,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 5
-    region: content
+    region: second
   field_year:
     type: number_integer
     label: inline
@@ -93,12 +133,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 4
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+    region: second
 hidden:
   field_bibliographic_description: true
   field_category: true
@@ -119,4 +154,5 @@ hidden:
   field_tags: true
   field_udk: true
   langcode: true
+  links: true
   search_api_excerpt: true
