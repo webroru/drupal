@@ -33,6 +33,7 @@
         "drupal/file_resup": "^2.0",
         "drupal/fontawesome": "^2.26",
         "drupal/menu_block": "^1.11",
+        "drupal/menu_items_visibility": "^1.1",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
         "drupal/migrate_upgrade": "^4.0",

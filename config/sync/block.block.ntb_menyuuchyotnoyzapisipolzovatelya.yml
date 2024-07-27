@@ -5,7 +5,9 @@ dependencies:
   config:
     - system.menu.account
   module:
+    - block_class
     - menu_block
+    - system
   theme:
     - ntb
 id: ntb_menyuuchyotnoyzapisipolzovatelya
@@ -30,4 +32,8 @@ settings:
   render_parent: false
   suggestion: account
   hide_on_nonactive: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

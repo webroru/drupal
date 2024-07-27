@@ -5,7 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:106bc80a-e797-4391-876e-8ad88c6e1178'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - ntb
 id: ntb_video
@@ -22,4 +24,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -5,7 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:8654f8bf-0373-4315-9f5b-28a63d6b18eb'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - ntb
 id: ntb_ssylkanagruppu
@@ -22,4 +24,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

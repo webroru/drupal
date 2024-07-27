@@ -5,7 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:a4144f47-41e4-4a71-a7c6-eef1501750a5'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - ntb
 id: ntb_pokazyvaetssylkinaelektronnyykatalogibibliotekuntb
@@ -22,4 +24,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

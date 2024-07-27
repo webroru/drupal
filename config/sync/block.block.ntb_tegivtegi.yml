@@ -3,6 +3,8 @@ langcode: ru
 status: true
 dependencies:
   module:
+    - block_class
+    - system
     - tagclouds
   theme:
     - ntb
@@ -22,4 +24,8 @@ settings:
     contexts: {  }
   tags: '20'
   vocabulary: tags
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

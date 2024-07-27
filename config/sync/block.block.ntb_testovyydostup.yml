@@ -5,7 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:b4562d1a-86fa-4eb9-8626-4954378d35b0'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - ntb
 id: ntb_testovyydostup
@@ -22,4 +24,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

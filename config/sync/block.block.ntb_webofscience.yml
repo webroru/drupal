@@ -5,7 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - ntb
 id: ntb_webofscience
@@ -22,4 +24,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
