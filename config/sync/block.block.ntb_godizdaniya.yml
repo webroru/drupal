@@ -1,0 +1,24 @@
+uuid: b346939e-e5e3-4c9c-8548-1fcb00296852
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.god_izdaniya
+  module:
+    - facets
+  theme:
+    - ntb
+id: ntb_godizdaniya
+theme: ntb
+region: sidebar_first
+weight: -16
+provider: null
+plugin: 'facet_block:god_izdaniya'
+settings:
+  id: 'facet_block:god_izdaniya'
+  label: 'Год издания'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: ntb_godizdaniya
+visibility: {  }

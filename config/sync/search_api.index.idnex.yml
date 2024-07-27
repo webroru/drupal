@@ -3,12 +3,15 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - field.storage.node.field_author
-    - field.storage.node.field_file
     - field.storage.node.field_isbn
+    - field.storage.node.field_author
+    - field.storage.node.field_year
+    - field.storage.node.field_category
+    - field.storage.node.field_file
     - search_api.server.mysql
   module:
     - node
+    - taxonomy
     - search_api
 id: idnex
 name: Idnex
@@ -39,6 +42,24 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_isbn
+  field_year:
+    label: 'Год издания'
+    datasource_id: 'entity:node'
+    property_path: field_year
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_year
+  name:
+    label: 'Категория » Термин таксономии » Название'
+    datasource_id: 'entity:node'
+    property_path: 'field_category:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_category
+      module:
+        - taxonomy
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -47,7 +68,7 @@ field_settings:
     type_locked: true
     hidden: true
   status:
-    label: null
+    label: status
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
@@ -65,7 +86,7 @@ field_settings:
       module:
         - node
   uid:
-    label: null
+    label: uid
     datasource_id: 'entity:node'
     property_path: uid
     type: integer

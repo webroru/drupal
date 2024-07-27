@@ -5,7 +5,6 @@ dependencies:
   content:
     - 'block_content:basic:b97b392b-dbd4-411c-a5fb-e231f3cc9db4'
   module:
-    - block_class
     - block_content
     - system
   theme:

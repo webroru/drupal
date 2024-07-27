@@ -1,20 +1,19 @@
-uuid: 6b9a7596-e05c-4217-8919-ec27727c6c65
+uuid: bd49b59f-9992-49f6-9d07-37bac2d77ae6
 langcode: ru
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.catalog
+    - field.storage.node.field_author
+    - search_api.index.idnex
   module:
-    - node
-    - user
+    - search_api
 id: katalog
 label: Каталог
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: search_api_index_idnex
+base_field: search_api_id
 display:
   default:
     id: default
@@ -22,28 +21,46 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Труды ученых'
+      title: Каталог
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_author:
+          id: field_author
+          table: search_api_index_idnex
+          field: field_author
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
-            word_boundary: false
-            ellipsis: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -59,8 +76,7 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: true
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -71,8 +87,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
@@ -81,6 +104,8 @@ display:
           tags:
             next: ››
             previous: ‹‹
+            first: '« Первая'
+            last: 'Последняя »'
           expose:
             items_per_page: false
             items_per_page_label: 'Элементов на страницу'
@@ -89,6 +114,7 @@ display:
             items_per_page_options_all_label: '- Все -'
             offset: false
             offset_label: Пропустить
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -100,52 +126,15 @@ display:
           sort_asc_label: 'По возрастанию'
           sort_desc_label: 'По убыванию'
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
-        type: tag
+        type: search_api_none
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
+      sorts: {  }
       arguments: {  }
-      filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            catalog: catalog
+      filters: {  }
       style:
         type: grid
         options:
@@ -158,16 +147,17 @@ display:
           col_class_custom: ''
           col_class_default: true
       row:
-        type: 'entity:node'
+        type: search_api
         options:
-          view_mode: teaser
+          view_modes:
+            'entity:node':
+              catalog: teaser
       query:
-        type: views_query
+        type: search_api_query
         options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
           query_tags: {  }
       relationships: {  }
       header: {  }
@@ -180,8 +170,10 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_author'
+        - 'config:search_api.index.idnex'
+        - 'search_api_list:idnex'
   page_1:
     id: page_1
     display_title: Page
@@ -197,5 +189,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_author'
+        - 'config:search_api.index.idnex'
+        - 'search_api_list:idnex'

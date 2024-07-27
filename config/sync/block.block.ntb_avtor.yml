@@ -1,0 +1,30 @@
+uuid: 2cd92d33-2723-40e3-a6fd-65196ab5dd04
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.avtor
+  module:
+    - block_class
+    - facets
+    - system
+  theme:
+    - ntb
+id: ntb_avtor
+theme: ntb
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'facet_block:avtor'
+settings:
+  id: 'facet_block:avtor'
+  label: Автор
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: ntb_avtor
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/catalog*'
