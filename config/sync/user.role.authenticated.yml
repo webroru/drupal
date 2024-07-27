@@ -10,6 +10,7 @@ dependencies:
     - file
     - filter
     - search
+    - search_api_page
     - shortcut
     - system
 _core:
@@ -28,3 +29,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view search api pages'
