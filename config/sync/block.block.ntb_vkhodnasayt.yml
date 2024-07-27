@@ -3,6 +3,8 @@ langcode: ru
 status: true
 dependencies:
   module:
+    - block_class
+    - system
     - user
   theme:
     - ntb
@@ -17,4 +19,8 @@ settings:
   label: 'Вход на сайт'
   label_display: visible
   provider: user
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
