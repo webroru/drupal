@@ -1,0 +1,5 @@
+ntb_snils.settings:
+  title: SNILS Settings
+  parent: user.admin_index
+  route_name: ntb_snils.settings
+  weight: 10

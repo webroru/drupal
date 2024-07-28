@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    autowire: true
+
+  Drupal\Core\KeyValueStore\KeyValueFactoryInterface: '@keyvalue'
+  Drupal\ntb_snils\Batch\BatchSnils: ~
+  Drupal\ntb_snils\Store\SnilsStore: ~
+  Drupal\ntb_snils\Validator: ~

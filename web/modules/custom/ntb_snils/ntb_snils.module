@@ -1,0 +1,39 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\ntb_snils\Form\SettingsForm;
+use Drupal\ntb_snils\Validator;
+
+/**
+ * Implements hook_form_FORM_ID_alter() to modify the user registration form.
+ */
+function ntb_snils_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id): void
+{
+    $form['#validate'][] = 'ntb_snils_custom_validate';
+}
+
+/**
+ * Custom validation handler for the user registration form.
+ */
+function ntb_snils_custom_validate($form, &$form_state): void
+{
+    if (in_array('administrator', \Drupal::currentUser()->getRoles())) {
+        return;
+    }
+
+    $message = \Drupal::config(SettingsForm::SETTINGS)->get('error_message')
+        ?: 'Ваших данных нет в базе, просим обращаться в аудиторию 7-112 или написать запрос в
+            сообщение сообщества НТБ Вконтакте (https://vk.com/ntb_donstu).
+            Также виджет для запроса расположен на главной странице сайта (Есть вопрос?).';
+
+    /** @var Validator $validator */
+    $validator = \Drupal::service(Validator::class);
+    $snils = $form_state->getValue('field_snils')[0]['value'] ?? '';
+    $name = $form_state->getValue('name');
+
+    if (!$validator->validate($snils, $name)) {
+        $form_state->setErrorByName('field_snils', $message);
+    }
+}

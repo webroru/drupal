@@ -1,0 +1,8 @@
+name: NTB SNILS
+type: module
+description: Validate user registration with SNILS
+package: NTB
+core_version_requirement: ^10
+dependencies:
+  - drupal:field
+  - drupal:text

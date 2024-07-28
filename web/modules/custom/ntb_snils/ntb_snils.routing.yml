@@ -1,0 +1,7 @@
+ntb_snils.settings:
+  path: /admin/config/system/snils
+  defaults:
+    _title: SNILS Settings
+    _form: Drupal\ntb_snils\Form\SettingsForm
+  requirements:
+    _permission: administer site configuration
