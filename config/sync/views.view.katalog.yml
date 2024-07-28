@@ -98,7 +98,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 20
           total_pages: null
           id: 0
           tags:
@@ -134,7 +134,48 @@ display:
       empty: {  }
       sorts: {  }
       arguments: {  }
-      filters: {  }
+      filters:
+        type:
+          id: type
+          table: search_api_index_idnex
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_options
+          operator: or
+          value:
+            catalog: catalog
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
       style:
         type: grid
         options:
@@ -176,10 +217,14 @@ display:
         - 'search_api_list:idnex'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: 'Труды ученых'
     display_plugin: page
     position: 1
     display_options:
+      defaults:
+        filters: true
+        filter_groups: true
+      display_description: ''
       display_extenders: {  }
       path: catalog
     cache_metadata:

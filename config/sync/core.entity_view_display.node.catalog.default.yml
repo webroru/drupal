@@ -31,7 +31,6 @@ dependencies:
   module:
     - datetime
     - file
-    - options
     - text
     - user
 id: node.catalog.default
@@ -113,7 +112,7 @@ content:
     region: content
   field_download_counter:
     type: number_integer
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -136,9 +135,12 @@ content:
     weight: 4
     region: content
   field_new:
-    type: list_default
+    type: boolean
     label: above
-    settings: {  }
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
     weight: 23
     region: content
@@ -210,3 +212,4 @@ hidden:
   field_disk_cover: true
   field_image: true
   langcode: true
+  search_api_excerpt: true

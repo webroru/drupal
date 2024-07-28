@@ -5,7 +5,6 @@ dependencies:
   config:
     - facets.facet.avtor
   module:
-    - block_class
     - facets
     - system
   theme:

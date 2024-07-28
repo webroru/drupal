@@ -1,24 +1,24 @@
-uuid: 23bba82d-f57e-4519-a2ac-d2d80422b5bb
+uuid: 56a2c471-9934-4db6-987b-8119364763e9
 langcode: ru
 status: true
 dependencies:
   config:
-    - facets.facet.razdel
+    - facets.facet.kategoriya
   module:
     - facets
   theme:
     - ntb
-id: ntb_razdel
+id: ntb_kategoriya
 theme: ntb
 region: sidebar_first
-weight: -18
+weight: -19
 provider: null
-plugin: 'facet_block:razdel'
+plugin: 'facet_block:kategoriya'
 settings:
-  id: 'facet_block:razdel'
+  id: 'facet_block:kategoriya'
   label: Раздел
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: ntb_razdel
+  block_id: ntb_kategoriya
 visibility: {  }
