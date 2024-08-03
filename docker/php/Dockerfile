@@ -48,7 +48,13 @@ RUN { \
       echo 'opcache.revalidate_freq=60'; \
     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-RUN echo "memory_limit = 256M" >> /usr/local/etc/php/conf.d/memory-limit.ini
+RUN { \
+    echo "file_uploads = On"; \
+    echo "memory_limit = 512M"; \
+    echo "upload_max_filesize = 256M"; \
+    echo "post_max_size = 256M"; \
+    echo "max_execution_time = 60"; \
+} > /usr/local/etc/php/conf.d/memory-limit.ini
 
 ENV PATH=${PATH}:/var/www/html/vendor/bin
 
