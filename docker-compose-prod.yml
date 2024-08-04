@@ -1,0 +1,42 @@
+version: '3.5'
+
+services:
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - db-data:/var/lib/mysql/:rw
+    env_file:
+      - .env
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "127.0.0.1:3306:3306"
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx/hosts:/etc/nginx/conf.d
+    depends_on:
+      - php
+
+  php:
+    build:
+      dockerfile: docker/php/Dockerfile
+      target: base
+    env_file:
+      - .env
+    volumes:
+      - ./composer.json:/var/www/html/composer.json
+      - ./composer.lock:/var/www/html/composer.lock
+      - ./config:/var/www/html/config
+      - ./private:/var/www/html/private
+      - ./web/libraries:/var/www/html/web/libraries
+      - ./web/modules:/var/www/html/web/modules
+      - ./web/sites:/var/www/html/web/sites
+      - ./web/themes:/var/www/html/web/themes
+    working_dir: /var/www/html
+
+volumes:
+  db-data:
